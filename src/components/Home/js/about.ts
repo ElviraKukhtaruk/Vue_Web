@@ -1,6 +1,5 @@
 import { ref, computed } from 'vue';
 
-import IconComputer from '../icons/IconComputer.vue';
 import IconPages from '../icons/IconPages.vue';
 import IconDiamond from '../icons/IconDiamond.vue';
 import IconBuild from '../icons/IconBuild.vue';
@@ -11,6 +10,7 @@ import IconVersion from '../icons/IconVersion.vue';
 import IconLibrary from '../icons/IconLibrary.vue';
 import IconWave from '../icons/IconWave.vue';
 import IconCross from '../icons/IconCross.vue';
+import IconComputer from '../icons/IconC.vue';
 
 export function useAboutSlides() {
   const slides = [
