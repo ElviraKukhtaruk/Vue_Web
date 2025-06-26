@@ -1,25 +1,28 @@
-import { computed } from 'vue';
-import { useRoute } from 'vue-router';
-
-export interface MenuItem {
-  to?: { hash?: string; path?: string };
-  label?: string;
-  href?: string;
-  icon?: string;
-  external?: true;
-}
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 export function useMenuItems() {
-  const route = useRoute();
-  const currentHash = computed(() => route.hash);
+  const currentHash = ref(window.location.hash);
 
-  const menuItems: MenuItem[] = [
+  // Update the current hash on scroll or anchor click
+  const updateHash = () => {
+    currentHash.value = window.location.hash;
+  };
+
+  onMounted(() => {
+    window.addEventListener('hashchange', updateHash);
+  });
+
+  onBeforeUnmount(() => {
+    window.removeEventListener('hashchange', updateHash);
+  });
+
+  const menuItems = [
     { to: { hash: '#home' }, label: 'Home' },
     { to: { hash: '#features' }, label: 'Features' },
-    { to: { path: '#pricing', hash: '#pricing' }, label: 'Pricing' },
-    { to: { path: '#', hash: '#blog' }, label: 'Blog' },
-    { href: 'https://dribbble.com/', icon: 'dribbble', external: true as const },
-    { href: 'https://www.behance.net/', icon: 'behance', external: true as const },
+    { to: { hash: '#pricing' }, label: 'Pricing' },
+    { to: { hash: '#blog' }, label: 'Blog' },
+    { href: 'https://dribbble.com/', icon: 'dribbble', external: true },
+    { href: 'https://www.behance.net/', icon: 'behance', external: true },
   ];
 
   return {
