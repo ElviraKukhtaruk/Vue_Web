@@ -10,12 +10,12 @@ import IconVersion from '../icons/IconVersion.vue';
 import IconLibrary from '../icons/IconLibrary.vue';
 import IconWave from '../icons/IconWave.vue';
 import IconCross from '../icons/IconCross.vue';
-import IconComputer from '../icons/IconC.vue';
+import aImage from '@/assets/images/a.png';
 
 export function useAboutSlides() {
   const slides = [
     {
-      icon: IconComputer,
+      image: aImage,
       title: 'We Create Something New',
       subtitle: 'We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.',
       features: [
@@ -32,7 +32,7 @@ export function useAboutSlides() {
       ],
     },
     {
-      icon: IconComputer,
+      image: aImage,
       title: 'Design with Confidence',
       subtitle: 'We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.',
       features: [
@@ -49,7 +49,7 @@ export function useAboutSlides() {
       ],
     },
     {
-      icon: IconComputer,
+      image: aImage,
       title: 'Speed up Development',
       subtitle: 'Leverage pre-built UI kits and elements for rapid development.',
       features: [
@@ -58,7 +58,7 @@ export function useAboutSlides() {
       ],
     },
     {
-      icon: IconComputer,
+      image: aImage,
       title: 'Streamlined Collaboration',
       subtitle: 'Tools built for cross-functional teams to work better together.',
       features: [
@@ -67,7 +67,7 @@ export function useAboutSlides() {
       ],
     },
     {
-      icon: IconComputer,
+      image: aImage,
       title: 'Future-proof Design',
       subtitle: 'Stay ahead with modern trends and responsive design systems.',
       features: [

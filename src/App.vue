@@ -41,3 +41,4 @@ import bg4 from '@/assets/images/bg4.jpg';
     </template>
   </Layout>
 </template>
+<style src="./components/Home/styles/fonts.css"></style>
