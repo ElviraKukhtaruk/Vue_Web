@@ -1,0 +1,38 @@
+.menu {
+    padding: 55px 0px 10px 0px;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.items {
+    display: flex;
+    gap: 42px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.90rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link.icon {
+    font-size: 0.4rem;
+}
+
+.item a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-link.active {
+    color: rgba(255, 255, 255, 0.5);
+}

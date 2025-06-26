@@ -1,0 +1,78 @@
+@media only screen and (max-width: 545px) {
+    /* header */
+    .text h1 {
+        font-size: 2rem;
+    }
+    .text .subtitle {
+        font-size: 1rem;
+    }
+
+    /* About */
+    .text_content .title h1 {
+        font-size: 2rem;
+    }
+    .text_content .title p {
+        font-size: 1rem;
+    }
+
+    /* Start */
+    .start_text h1 {
+        font-size: 2rem;
+    }
+    .start_text p {
+        font-size: 1rem;
+    }
+
+    /* Contact */
+    .contact_text h1 {
+        font-size: 2rem;
+    }
+
+    .contact_text p {
+        font-size: 1rem;
+    }
+
+    /* Pricing */
+    .pricing_text h1 {
+        font-size: 2rem;
+    }
+
+    .pricing_text p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    /* header */
+    .text h1 {
+        font-size: 1.6rem;
+    }
+    .text .subtitle {
+        font-size: 0.9rem;
+    }
+
+    /* About */
+    .text_content .title h1 {
+        font-size: 1.6rem;
+    }
+    .text_content .title p {
+        font-size: 0.9rem;
+    }
+
+    /* Start */
+    .start_text h1 {
+        font-size: 1.6rem;
+    }
+    .start_text p {
+        font-size: 0.9rem;
+    }
+
+    /* Contact */
+    .contact_text h1 {
+        font-size: 1.6rem;
+    }
+
+    .contact_text p {
+        font-size: 0.9rem;
+    }
+}

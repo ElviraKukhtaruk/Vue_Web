@@ -1,0 +1,160 @@
+.pricing {
+    padding: 60px 0 60px 0;
+    background-color: #2F1893;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.pricing_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing_text h1 {
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.pricing_text p {
+    text-align: center;
+    max-width: 400px;
+    font-size: 1.24rem;
+}
+
+.table {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    padding: 0 10px 0 10px;
+}
+
+.price {
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 7px;
+    padding: 40px 0 40px 0;
+    width: 100%;
+    max-width: 350px;
+    min-width: 200px;
+}
+
+.price .text {
+    text-align: left;
+    padding-left: 50px;
+}
+
+.price .text div {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.price .text h1 {
+    font-size: 3.6rem;
+}
+.price .text h2 {
+    font-size: 1.2rem;
+}
+.price .text p {
+    font-size: 1rem;
+    width: fit-content;
+}
+
+.control {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.price button {
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    color: #fff;
+    background: none;
+    padding: 15px 45px 15px 45px;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 60px 0 60px;
+    transition: all 0.4s;
+}
+
+.price button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    sborder: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+button.main_solution {
+    background-color: #E93A7D;
+    border-color: #E93A7D;
+}
+
+.includes {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.includes .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.includes .item p {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.check {
+    width: 15px;
+    height: 15px;
+}
+
+@media only screen and (max-width: 1010px) {
+    .table {
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 744px) {
+    .price {
+        max-width: 500px;
+    }
+}
+@media only screen and (max-width: 490px) {
+    .pricing_text {
+        padding: 0 20px 0 20px;
+    }
+}
+@media only screen and (max-width: 330px) {
+    .price button {
+        padding: 15px 35px 15px 35px;
+        font-size: 0.9rem;
+        margin: 0 20px 0 20px;
+    }
+    .price .text h2 {
+        font-size: 1rem;
+    }
+    .price .text h1 {
+        font-size: 3rem;
+    }
+    .price .text p {
+        font-size: 0.8rem;
+    }
+
+
+}
